@@ -31,19 +31,19 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cboTipo = new System.Windows.Forms.ComboBox();
+            this.lblTipo = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblCantidad = new System.Windows.Forms.Label();
+            this.lblcantidadMinima = new System.Windows.Forms.Label();
+            this.cboNombre = new System.Windows.Forms.ComboBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.lblVencimiento = new System.Windows.Forms.Label();
+            this.dtpVencimineto = new System.Windows.Forms.DateTimePicker();
+            this.nudCantidad = new System.Windows.Forms.NumericUpDown();
+            this.nudCantidadMinima = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadMinima)).BeginInit();
             this.SuspendLayout();
             // 
             // radioButton1
@@ -82,61 +82,61 @@
             this.radioButton3.Text = "Limpieza";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // cboTipo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(166, 121);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 3;
+            this.cboTipo.FormattingEnabled = true;
+            this.cboTipo.Location = new System.Drawing.Point(166, 121);
+            this.cboTipo.Name = "cboTipo";
+            this.cboTipo.Size = new System.Drawing.Size(121, 21);
+            this.cboTipo.TabIndex = 3;
             // 
-            // label1
+            // lblTipo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(40, 123);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 19);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Tipo:";
+            this.lblTipo.AutoSize = true;
+            this.lblTipo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipo.Location = new System.Drawing.Point(40, 123);
+            this.lblTipo.Name = "lblTipo";
+            this.lblTipo.Size = new System.Drawing.Size(41, 19);
+            this.lblTipo.TabIndex = 4;
+            this.lblTipo.Text = "Tipo:";
             // 
-            // label2
+            // lblNombre
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(40, 185);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 20);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Nombre:";
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(40, 185);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(69, 20);
+            this.lblNombre.TabIndex = 5;
+            this.lblNombre.Text = "Nombre:";
             // 
-            // label3
+            // lblCantidad
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(40, 252);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 19);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Cantidad:";
+            this.lblCantidad.AutoSize = true;
+            this.lblCantidad.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidad.Location = new System.Drawing.Point(40, 252);
+            this.lblCantidad.Name = "lblCantidad";
+            this.lblCantidad.Size = new System.Drawing.Size(71, 19);
+            this.lblCantidad.TabIndex = 6;
+            this.lblCantidad.Text = "Cantidad:";
             // 
-            // label4
+            // lblcantidadMinima
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(40, 305);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(124, 19);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Cantidad Minima:";
+            this.lblcantidadMinima.AutoSize = true;
+            this.lblcantidadMinima.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcantidadMinima.Location = new System.Drawing.Point(40, 305);
+            this.lblcantidadMinima.Name = "lblcantidadMinima";
+            this.lblcantidadMinima.Size = new System.Drawing.Size(124, 19);
+            this.lblcantidadMinima.TabIndex = 7;
+            this.lblcantidadMinima.Text = "Cantidad Minima:";
             // 
-            // comboBox2
+            // cboNombre
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(166, 187);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 8;
+            this.cboNombre.FormattingEnabled = true;
+            this.cboNombre.Location = new System.Drawing.Point(166, 187);
+            this.cboNombre.Name = "cboNombre";
+            this.cboNombre.Size = new System.Drawing.Size(121, 21);
+            this.cboNombre.TabIndex = 8;
             // 
             // checkBox1
             // 
@@ -148,60 +148,60 @@
             this.checkBox1.Text = "Caduca";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // lblVencimiento
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(40, 396);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 19);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Vencimiento:";
+            this.lblVencimiento.AutoSize = true;
+            this.lblVencimiento.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVencimiento.Location = new System.Drawing.Point(40, 396);
+            this.lblVencimiento.Name = "lblVencimiento";
+            this.lblVencimiento.Size = new System.Drawing.Size(93, 19);
+            this.lblVencimiento.TabIndex = 12;
+            this.lblVencimiento.Text = "Vencimiento:";
             // 
-            // dateTimePicker1
+            // dtpVencimineto
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(139, 395);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(119, 20);
-            this.dateTimePicker1.TabIndex = 13;
+            this.dtpVencimineto.Location = new System.Drawing.Point(139, 395);
+            this.dtpVencimineto.Name = "dtpVencimineto";
+            this.dtpVencimineto.Size = new System.Drawing.Size(119, 20);
+            this.dtpVencimineto.TabIndex = 13;
             // 
-            // numericUpDown1
+            // nudCantidad
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(166, 252);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(121, 20);
-            this.numericUpDown1.TabIndex = 14;
+            this.nudCantidad.Location = new System.Drawing.Point(166, 252);
+            this.nudCantidad.Name = "nudCantidad";
+            this.nudCantidad.Size = new System.Drawing.Size(121, 20);
+            this.nudCantidad.TabIndex = 14;
             // 
-            // numericUpDown2
+            // nudCantidadMinima
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(166, 304);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(121, 20);
-            this.numericUpDown2.TabIndex = 15;
+            this.nudCantidadMinima.Location = new System.Drawing.Point(166, 304);
+            this.nudCantidadMinima.Name = "nudCantidadMinima";
+            this.nudCantidadMinima.Size = new System.Drawing.Size(121, 20);
+            this.nudCantidadMinima.TabIndex = 15;
             // 
             // frmAlacena
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(527, 549);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.nudCantidadMinima);
+            this.Controls.Add(this.nudCantidad);
+            this.Controls.Add(this.dtpVencimineto);
+            this.Controls.Add(this.lblVencimiento);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboNombre);
+            this.Controls.Add(this.lblcantidadMinima);
+            this.Controls.Add(this.lblCantidad);
+            this.Controls.Add(this.lblNombre);
+            this.Controls.Add(this.lblTipo);
+            this.Controls.Add(this.cboTipo);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Name = "frmAlacena";
             this.Text = "Alacena";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadMinima)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,16 +212,16 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cboTipo;
+        private System.Windows.Forms.Label lblTipo;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblCantidad;
+        private System.Windows.Forms.Label lblcantidadMinima;
+        private System.Windows.Forms.ComboBox cboNombre;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.Label lblVencimiento;
+        private System.Windows.Forms.DateTimePicker dtpVencimineto;
+        private System.Windows.Forms.NumericUpDown nudCantidad;
+        private System.Windows.Forms.NumericUpDown nudCantidadMinima;
     }
 }

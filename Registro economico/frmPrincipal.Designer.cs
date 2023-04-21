@@ -28,49 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.cmdAlacena = new System.Windows.Forms.Button();
+            this.cmdFinanza = new System.Windows.Forms.Button();
+            this.lblMostrarInformacionDe = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // cmdAlacena
             // 
-            this.button1.Location = new System.Drawing.Point(71, 94);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 84);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Alacena";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.cmdAlacena.Location = new System.Drawing.Point(71, 94);
+            this.cmdAlacena.Name = "cmdAlacena";
+            this.cmdAlacena.Size = new System.Drawing.Size(147, 84);
+            this.cmdAlacena.TabIndex = 0;
+            this.cmdAlacena.Text = "Alacena";
+            this.cmdAlacena.UseVisualStyleBackColor = true;
+            this.cmdAlacena.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // cmdFinanza
             // 
-            this.button2.Location = new System.Drawing.Point(71, 209);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(147, 84);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Finanza";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.cmdFinanza.Location = new System.Drawing.Point(71, 209);
+            this.cmdFinanza.Name = "cmdFinanza";
+            this.cmdFinanza.Size = new System.Drawing.Size(147, 84);
+            this.cmdFinanza.TabIndex = 1;
+            this.cmdFinanza.Text = "Finanza";
+            this.cmdFinanza.UseVisualStyleBackColor = true;
+            this.cmdFinanza.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label1
+            // lblMostrarInformacionDe
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(264, 29);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Mostrar indormacion de:";
+            this.lblMostrarInformacionDe.AutoSize = true;
+            this.lblMostrarInformacionDe.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMostrarInformacionDe.Location = new System.Drawing.Point(12, 33);
+            this.lblMostrarInformacionDe.Name = "lblMostrarInformacionDe";
+            this.lblMostrarInformacionDe.Size = new System.Drawing.Size(264, 29);
+            this.lblMostrarInformacionDe.TabIndex = 2;
+            this.lblMostrarInformacionDe.Text = "Mostrar indormacion de:";
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(300, 357);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lblMostrarInformacionDe);
+            this.Controls.Add(this.cmdFinanza);
+            this.Controls.Add(this.cmdAlacena);
             this.Name = "frmPrincipal";
             this.Text = "frmPrincipal";
             this.ResumeLayout(false);
@@ -80,8 +80,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button cmdAlacena;
+        private System.Windows.Forms.Button cmdFinanza;
+        private System.Windows.Forms.Label lblMostrarInformacionDe;
     }
 }
