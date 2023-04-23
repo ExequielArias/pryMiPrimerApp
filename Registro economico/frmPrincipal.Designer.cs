@@ -71,7 +71,9 @@
             this.Controls.Add(this.lblMostrarInformacionDe);
             this.Controls.Add(this.cmdFinanza);
             this.Controls.Add(this.cmdAlacena);
+            this.MaximizeBox = false;
             this.Name = "frmPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPrincipal";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -56,7 +56,7 @@
             this.cmdCancelar.Name = "cmdCancelar";
             this.cmdCancelar.Size = new System.Drawing.Size(98, 23);
             this.cmdCancelar.TabIndex = 10;
-            this.cmdCancelar.Text = "Cancelar";
+            this.cmdCancelar.Text = "Borrar";
             this.cmdCancelar.UseVisualStyleBackColor = true;
             // 
             // cmdCalcular
@@ -67,6 +67,7 @@
             this.cmdCalcular.TabIndex = 9;
             this.cmdCalcular.Text = "Calcular";
             this.cmdCalcular.UseVisualStyleBackColor = true;
+            this.cmdCalcular.Click += new System.EventHandler(this.cmdCalcular_Click);
             // 
             // mrcGastosExtra
             // 
@@ -79,7 +80,7 @@
             this.mrcGastosExtra.Size = new System.Drawing.Size(223, 76);
             this.mrcGastosExtra.TabIndex = 8;
             this.mrcGastosExtra.TabStop = false;
-            this.mrcGastosExtra.Text = "Gastos Extra";
+            this.mrcGastosExtra.Text = "Sobrante";
             // 
             // txtMonto
             // 
@@ -197,6 +198,7 @@
             this.mrcIngreso.TabIndex = 6;
             this.mrcIngreso.TabStop = false;
             this.mrcIngreso.Text = "Ingreso";
+            this.mrcIngreso.Enter += new System.EventHandler(this.mrcIngreso_Enter);
             // 
             // txtDeposito
             // 
@@ -226,8 +228,11 @@
             this.Controls.Add(this.mrcGastosExtra);
             this.Controls.Add(this.mrcGastosFijos);
             this.Controls.Add(this.mrcIngreso);
+            this.MaximizeBox = false;
             this.Name = "frmFinanza";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Finanza";
+            this.Load += new System.EventHandler(this.frmFinanza_Load);
             this.mrcGastosExtra.ResumeLayout(false);
             this.mrcGastosExtra.PerformLayout();
             this.mrcGastosFijos.ResumeLayout(false);
