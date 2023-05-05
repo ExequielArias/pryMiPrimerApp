@@ -28,5 +28,10 @@ namespace Registro_economico
             frmFinanza VentanaFinanza = new frmFinanza();   
             VentanaFinanza.ShowDialog();    
         }
+
+        private void lblMostrarInformacionDe_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

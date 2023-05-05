@@ -28,23 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFinanza));
             this.cmdCancelar = new System.Windows.Forms.Button();
             this.cmdCalcular = new System.Windows.Forms.Button();
             this.mrcGastosExtra = new System.Windows.Forms.GroupBox();
+            this.lbl_____ = new System.Windows.Forms.Label();
             this.lblMonto = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.mrcGastosFijos = new System.Windows.Forms.GroupBox();
             this.txtComida = new System.Windows.Forms.TextBox();
             this.txtImpuestos = new System.Windows.Forms.TextBox();
             this.txtAlquiler = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.lblComida = new System.Windows.Forms.Label();
             this.lblImpuestos = new System.Windows.Forms.Label();
             this.lblAlquiler = new System.Windows.Forms.Label();
             this.mrcIngreso = new System.Windows.Forms.GroupBox();
             this.txtDeposito = new System.Windows.Forms.TextBox();
             this.lblDeposito = new System.Windows.Forms.Label();
-            this.lbl_____ = new System.Windows.Forms.Label();
             this.mrcGastosExtra.SuspendLayout();
             this.mrcGastosFijos.SuspendLayout();
             this.mrcIngreso.SuspendLayout();
@@ -58,6 +57,7 @@
             this.cmdCancelar.TabIndex = 10;
             this.cmdCancelar.Text = "Borrar";
             this.cmdCancelar.UseVisualStyleBackColor = true;
+            this.cmdCancelar.Click += new System.EventHandler(this.cmdCancelar_Click);
             // 
             // cmdCalcular
             // 
@@ -73,7 +73,6 @@
             // 
             this.mrcGastosExtra.Controls.Add(this.lbl_____);
             this.mrcGastosExtra.Controls.Add(this.lblMonto);
-            this.mrcGastosExtra.Controls.Add(this.label6);
             this.mrcGastosExtra.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcGastosExtra.Location = new System.Drawing.Point(12, 218);
             this.mrcGastosExtra.Name = "mrcGastosExtra";
@@ -81,6 +80,16 @@
             this.mrcGastosExtra.TabIndex = 8;
             this.mrcGastosExtra.TabStop = false;
             this.mrcGastosExtra.Text = "Sobrante";
+            // 
+            // lbl_____
+            // 
+            this.lbl_____.AutoSize = true;
+            this.lbl_____.Location = new System.Drawing.Point(98, 29);
+            this.lbl_____.Name = "lbl_____";
+            this.lbl_____.Size = new System.Drawing.Size(73, 29);
+            this.lbl_____.TabIndex = 5;
+            this.lbl_____.Text = "_____";
+            this.lbl_____.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblMonto
             // 
@@ -92,20 +101,11 @@
             this.lblMonto.TabIndex = 4;
             this.lblMonto.Text = "Monto:";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 99);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 29);
-            this.label6.TabIndex = 3;
-            // 
             // mrcGastosFijos
             // 
             this.mrcGastosFijos.Controls.Add(this.txtComida);
             this.mrcGastosFijos.Controls.Add(this.txtImpuestos);
             this.mrcGastosFijos.Controls.Add(this.txtAlquiler);
-            this.mrcGastosFijos.Controls.Add(this.label5);
             this.mrcGastosFijos.Controls.Add(this.lblComida);
             this.mrcGastosFijos.Controls.Add(this.lblImpuestos);
             this.mrcGastosFijos.Controls.Add(this.lblAlquiler);
@@ -140,14 +140,6 @@
             this.txtAlquiler.Name = "txtAlquiler";
             this.txtAlquiler.Size = new System.Drawing.Size(93, 22);
             this.txtAlquiler.TabIndex = 4;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 99);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 29);
-            this.label5.TabIndex = 3;
             // 
             // lblComida
             // 
@@ -210,16 +202,6 @@
             this.lblDeposito.TabIndex = 0;
             this.lblDeposito.Text = "Deposito:";
             // 
-            // lbl_____
-            // 
-            this.lbl_____.AutoSize = true;
-            this.lbl_____.Location = new System.Drawing.Point(98, 29);
-            this.lbl_____.Name = "lbl_____";
-            this.lbl_____.Size = new System.Drawing.Size(73, 29);
-            this.lbl_____.TabIndex = 5;
-            this.lbl_____.Text = "_____";
-            this.lbl_____.Click += new System.EventHandler(this.label1_Click);
-            // 
             // frmFinanza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -230,6 +212,7 @@
             this.Controls.Add(this.mrcGastosExtra);
             this.Controls.Add(this.mrcGastosFijos);
             this.Controls.Add(this.mrcIngreso);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmFinanza";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -251,12 +234,10 @@
         private System.Windows.Forms.Button cmdCalcular;
         private System.Windows.Forms.GroupBox mrcGastosExtra;
         private System.Windows.Forms.Label lblMonto;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox mrcGastosFijos;
         private System.Windows.Forms.TextBox txtComida;
         private System.Windows.Forms.TextBox txtImpuestos;
         private System.Windows.Forms.TextBox txtAlquiler;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblComida;
         private System.Windows.Forms.Label lblImpuestos;
         private System.Windows.Forms.Label lblAlquiler;

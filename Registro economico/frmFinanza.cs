@@ -14,6 +14,12 @@ namespace Registro_economico
     public partial class frmFinanza : Form
         
     {
+        //Declaracion de Variables
+        decimal deposito;
+        decimal alquiler;
+        decimal impuestos;
+        decimal comida;
+        decimal calculo; 
        
         public frmFinanza()
         {
@@ -32,10 +38,10 @@ namespace Registro_economico
 
         private void cmdCalcular_Click(object sender, EventArgs e)
         {
-            var deposito=Convert.ToInt32(txtDeposito.Text);
-            var alquiler= Convert.ToInt32(txtAlquiler.Text);
-            var impuestos= Convert.ToInt32(txtImpuestos.Text);
-            var comida= Convert.ToInt32(txtComida.Text);
+            var deposito=Convert.ToDecimal(txtDeposito.Text);
+            var alquiler= Convert.ToDecimal(txtAlquiler.Text);
+            var impuestos= Convert.ToDecimal(txtImpuestos.Text);
+            var comida= Convert.ToDecimal(txtComida.Text); 
             var calculo = deposito - alquiler - impuestos - comida;
             lbl_____.Text = calculo.ToString(); 
         }
@@ -43,6 +49,11 @@ namespace Registro_economico
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cmdCancelar_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
