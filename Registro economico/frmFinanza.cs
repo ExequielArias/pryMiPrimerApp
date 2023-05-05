@@ -10,21 +10,24 @@ using System.Windows.Forms;
 
 namespace Registro_economico
 {
+    
     public partial class frmFinanza : Form
+        
     {
+       
         public frmFinanza()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
         private void mrcIngreso_Enter(object sender, EventArgs e)
         {
-
+         
         }
 
         private void frmFinanza_Load(object sender, EventArgs e)
         {
-
+          
         }
 
         private void cmdCalcular_Click(object sender, EventArgs e)
@@ -34,7 +37,12 @@ namespace Registro_economico
             var impuestos= Convert.ToInt32(txtImpuestos.Text);
             var comida= Convert.ToInt32(txtComida.Text);
             var calculo = deposito - alquiler - impuestos - comida;
-            txtMonto.Text = calculo.ToString(); 
+            lbl_____.Text = calculo.ToString(); 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

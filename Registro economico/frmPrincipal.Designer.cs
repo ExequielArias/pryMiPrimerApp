@@ -74,7 +74,7 @@
             this.MaximizeBox = false;
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmPrincipal";
+            this.Text = "Principal";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -31,7 +31,6 @@
             this.cmdCancelar = new System.Windows.Forms.Button();
             this.cmdCalcular = new System.Windows.Forms.Button();
             this.mrcGastosExtra = new System.Windows.Forms.GroupBox();
-            this.txtMonto = new System.Windows.Forms.TextBox();
             this.lblMonto = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.mrcGastosFijos = new System.Windows.Forms.GroupBox();
@@ -45,6 +44,7 @@
             this.mrcIngreso = new System.Windows.Forms.GroupBox();
             this.txtDeposito = new System.Windows.Forms.TextBox();
             this.lblDeposito = new System.Windows.Forms.Label();
+            this.lbl_____ = new System.Windows.Forms.Label();
             this.mrcGastosExtra.SuspendLayout();
             this.mrcGastosFijos.SuspendLayout();
             this.mrcIngreso.SuspendLayout();
@@ -52,7 +52,7 @@
             // 
             // cmdCancelar
             // 
-            this.cmdCancelar.Location = new System.Drawing.Point(37, 319);
+            this.cmdCancelar.Location = new System.Drawing.Point(21, 317);
             this.cmdCancelar.Name = "cmdCancelar";
             this.cmdCancelar.Size = new System.Drawing.Size(98, 23);
             this.cmdCancelar.TabIndex = 10;
@@ -61,7 +61,7 @@
             // 
             // cmdCalcular
             // 
-            this.cmdCalcular.Location = new System.Drawing.Point(141, 319);
+            this.cmdCalcular.Location = new System.Drawing.Point(125, 317);
             this.cmdCalcular.Name = "cmdCalcular";
             this.cmdCalcular.Size = new System.Drawing.Size(94, 23);
             this.cmdCalcular.TabIndex = 9;
@@ -71,24 +71,16 @@
             // 
             // mrcGastosExtra
             // 
-            this.mrcGastosExtra.Controls.Add(this.txtMonto);
+            this.mrcGastosExtra.Controls.Add(this.lbl_____);
             this.mrcGastosExtra.Controls.Add(this.lblMonto);
             this.mrcGastosExtra.Controls.Add(this.label6);
             this.mrcGastosExtra.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcGastosExtra.Location = new System.Drawing.Point(12, 218);
             this.mrcGastosExtra.Name = "mrcGastosExtra";
-            this.mrcGastosExtra.Size = new System.Drawing.Size(223, 76);
+            this.mrcGastosExtra.Size = new System.Drawing.Size(207, 76);
             this.mrcGastosExtra.TabIndex = 8;
             this.mrcGastosExtra.TabStop = false;
             this.mrcGastosExtra.Text = "Sobrante";
-            // 
-            // txtMonto
-            // 
-            this.txtMonto.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMonto.Location = new System.Drawing.Point(98, 38);
-            this.txtMonto.Name = "txtMonto";
-            this.txtMonto.Size = new System.Drawing.Size(93, 22);
-            this.txtMonto.TabIndex = 5;
             // 
             // lblMonto
             // 
@@ -120,7 +112,7 @@
             this.mrcGastosFijos.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcGastosFijos.Location = new System.Drawing.Point(12, 87);
             this.mrcGastosFijos.Name = "mrcGastosFijos";
-            this.mrcGastosFijos.Size = new System.Drawing.Size(223, 120);
+            this.mrcGastosFijos.Size = new System.Drawing.Size(207, 120);
             this.mrcGastosFijos.TabIndex = 7;
             this.mrcGastosFijos.TabStop = false;
             this.mrcGastosFijos.Text = "Gastos Fijos";
@@ -194,7 +186,7 @@
             this.mrcIngreso.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcIngreso.Location = new System.Drawing.Point(12, 12);
             this.mrcIngreso.Name = "mrcIngreso";
-            this.mrcIngreso.Size = new System.Drawing.Size(223, 69);
+            this.mrcIngreso.Size = new System.Drawing.Size(207, 69);
             this.mrcIngreso.TabIndex = 6;
             this.mrcIngreso.TabStop = false;
             this.mrcIngreso.Text = "Ingreso";
@@ -218,11 +210,21 @@
             this.lblDeposito.TabIndex = 0;
             this.lblDeposito.Text = "Deposito:";
             // 
+            // lbl_____
+            // 
+            this.lbl_____.AutoSize = true;
+            this.lbl_____.Location = new System.Drawing.Point(98, 29);
+            this.lbl_____.Name = "lbl_____";
+            this.lbl_____.Size = new System.Drawing.Size(73, 29);
+            this.lbl_____.TabIndex = 5;
+            this.lbl_____.Text = "_____";
+            this.lbl_____.Click += new System.EventHandler(this.label1_Click);
+            // 
             // frmFinanza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(268, 390);
+            this.ClientSize = new System.Drawing.Size(242, 362);
             this.Controls.Add(this.cmdCancelar);
             this.Controls.Add(this.cmdCalcular);
             this.Controls.Add(this.mrcGastosExtra);
@@ -248,7 +250,6 @@
         private System.Windows.Forms.Button cmdCancelar;
         private System.Windows.Forms.Button cmdCalcular;
         private System.Windows.Forms.GroupBox mrcGastosExtra;
-        private System.Windows.Forms.TextBox txtMonto;
         private System.Windows.Forms.Label lblMonto;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox mrcGastosFijos;
@@ -262,5 +263,6 @@
         private System.Windows.Forms.GroupBox mrcIngreso;
         private System.Windows.Forms.TextBox txtDeposito;
         private System.Windows.Forms.Label lblDeposito;
+        private System.Windows.Forms.Label lbl_____;
     }
 }
