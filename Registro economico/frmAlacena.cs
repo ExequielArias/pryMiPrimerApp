@@ -15,7 +15,7 @@ namespace Registro_economico
         string varLugar;
         string varNombre;
         int varCantidad;
-        DateTime varVence; 
+        DateTime varVence;
         public frmAlacena()
         {
             InitializeComponent();
@@ -26,22 +26,37 @@ namespace Registro_economico
         }
         private void cmdCargar_Click(object sender, EventArgs e)
         {
-            varLugar=cboLugar.Text; 
-            varNombre=cboNombre.Text;
+            varLugar = cboLugar.Text;
+            varNombre = cboNombre.Text;
             varCantidad = Convert.ToInt32(nudCantidad.Value);
-            varVence=dtpVence.Value;    
+            varVence = dtpVence.Value;
             lstAlacena.Items.Add(varNombre + " " + varLugar + " " + varVence + " " + varCantidad);
-            
+
         }
 
         private void lstAlacena_SelectedIndexChanged(object sender, EventArgs e)
         {
-            lstAlacena.Items.Add(varLugar + varNombre + varCantidad);
+
         }
 
         private void cmdBorrar_Click(object sender, EventArgs e)
         {
-           
+            if (lstAlacena.SelectedItems.Count > 0)
+            {
+                // Iterar a través de los elementos seleccionados y eliminarlos
+                for (int i = lstAlacena.SelectedIndices.Count - 1; i >= 0; i--)
+                {
+                    int indiceSeleccionado = lstAlacena.SelectedIndices[i];
+                    lstAlacena.Items.RemoveAt(indiceSeleccionado);
+                }
+            }
+            else
+            {
+                // Si no hay elementos seleccionados, mostrar un mensaje de error
+                MessageBox.Show("No hay elementos seleccionados para borrar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
-}
+}  
+
+
